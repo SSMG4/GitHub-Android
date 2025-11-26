@@ -1,4 +1,4 @@
-name: Android CI
+0name: Android CI
 
 on:
   push:
@@ -12,6 +12,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+
+      - name: Make gradlew executable
+        run: chmod +x ./gradlew
+
       # Checkout source
       - name: Checkout repository
         uses: actions/checkout@v4
