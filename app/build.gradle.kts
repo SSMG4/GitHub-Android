@@ -50,4 +50,7 @@ dependencies {
 
     // Optional: Coil for native image loads if needed
     implementation("io.coil-kt:coil:2.7.0")
+
+    testImplementation("junit:junit:4.13.2")
+    testImplementation("org.jetbrains.kotlin:kotlin-test-junit:1.9.23")
 }
